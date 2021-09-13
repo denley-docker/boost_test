@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  cmake_test:
+    build: ./vendor/boost/
+    image: denley/boost
+    working_dir: /opt/app
+    entrypoint: /opt/app/docker-entrypoint.sh
+    volumes:
+      - .:/opt/app
+      - ./src:/opt/app/src/

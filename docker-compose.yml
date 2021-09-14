@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  cmake_test:
+  boost_test:
     build: ./vendor/boost/
     image: denley/boost
     working_dir: /opt/app
